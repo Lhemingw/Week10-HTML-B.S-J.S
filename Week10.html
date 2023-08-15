@@ -59,7 +59,39 @@
       </tr>
       </table>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form> 
+
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Budget Amount</label><!--Have this as a subtraction from the amount of pay minus tax-->
+      <input type="Number" class="form-control" id="exampleFormControlInput1" placeholder="Percent after tax"><!--Have formula to put the tax, split up in categories-->
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Example select</label><!---At some point I need to make the % to be able to manipulate it-->
+      <select class="form-control" id="exampleFormControlSelect1"><!--Have them use this to manipulate %-->
+        <option>1.Saving-20%-inculding Retirment</option>
+        <option>2.Housing-25%</option>
+        <option>3.Personal-15%</option>
+        <option>4.Food-30%</option>
+        <option>5.Other-10%</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect2">Example multiple select</label><!--Maybe even use one of these to put in a pers-->
+      <select multiple class="form-control" id="exampleFormControlSelect2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group"><!---put in automatic dollar amount-->
+      <label for="exampleFormControlTextarea1">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </form>  
+  <!--After here have a list of date, category dropdown, and what it was that was bought, and amount left-->
+
 <!-- DONT CODE BELOW HERE. KEEP THE SCRIPTS -->
 <link href="Week10.js">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
