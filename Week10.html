@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week10/HTML, B.S, J.S</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+      
+</head>
+<body class="container">
+  
+<!--Using HTML, Bootstrap, and JavaScript create a single page website that contains the following:
+
+    A Bootstrap styled table representing your choice of data.
+    A Bootstrap styled form that allows a user to add a new row to the table when clicking on submit.
+-->
+<div class="row mb-3">
+  <h1 class="display-3 text-center">Budget App</h1>
+        <h2 class="display-6  text-center">Week10-HTML/B.S/J.S</h2>
+        </div>
+        <div class="card pt-2 shadow">
+          <div class="card-body">
+              <div class="row">
+                  <div class="col-sm">
+                      <div class="form-group">
+                           <label for="Date-of-pay">Date of pay</label>
+                          <input type="date" class="form-control" id="Date-of-pay">
+                      </div>
+                  </div>
+                  <div class="col-sm">
+                      <div class="form-group">
+                          <label for="Amount-of-pay">Amount-of-pay</label><!--Amount of pay before tax-->
+                          <input type="number" class="form-control" id="Amount-of-pay">
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm">
+                      <div class="form-group">
+                          <label for="Tax-Amount">Tax-Amount</label>
+                          <input type="text" class="form-control" id="Tax-Amount">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-3 justify-content-start">
+                             <button id="add" class="btn btn-primary form-control mt-3">Create</button>
+                      </div>
+                  </div>
+      <table id="Amount-of-pay" class="table table-dark table-striped">
+      <tr> <!---I want to have in here a split of all tax; state, fed, s.s, medcare-->
+          <th>Amount of pay</th>
+          <th>Date of Pay</th>
+          <th>Tax Amount</th>
+          <th></th>
+          <th></th>
+      </tr>
+      </table>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form> 
+<!-- DONT CODE BELOW HERE. KEEP THE SCRIPTS -->
+<link href="Week10.js">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>    
+</body>
+</html>
